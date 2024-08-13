@@ -1,17 +1,16 @@
-let input = document.getElementById('input').value;
-
+let input = document.getElementById('taskInput')
 let list = document.getElementById('list');
 
 
-const handlebtn = () => {
+function handlebtn() {
 
     list.innerHTML += `<div><h1>${input.value}</h1>
-    <button onclick'this'>Delete</button>
+    <button onclick'handleDelete(this)'>Delete</button>
     </div>`;
 
     input.value = '';
 }
 
-const handleDelete = (e) => {
-    e.target.parentElement.remove();
+const handleDelete = (ele) => {
+    ele.target.parentElement.remove();
 }
