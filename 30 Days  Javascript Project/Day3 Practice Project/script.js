@@ -5,12 +5,12 @@ let list = document.getElementById('list');
 const handlebtn = () => {
 
     list.innerHTML += `<div><h1>${input.value}</h1>
-    <button 'handleDelete(this)'>Delete</button>
+    <button onclick="deleteval(this)">Delete</button>
     </div>`;
 
     input.value = '';
 }
 
-const handleDelete = (ele) => {
-    ele.target.parentElement.remove();
+const deleteval = (ele) => {
+    ele.parentElement.remove();
 }
