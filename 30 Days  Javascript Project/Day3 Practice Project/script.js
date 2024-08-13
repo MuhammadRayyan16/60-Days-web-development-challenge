@@ -1,16 +1,15 @@
-let input = document.getElementById('taskInput')
-let list = document.getElementById('list');
+var input = document.getElementById("taskInput");
+var list = document.getElementById("list");
 
-
-const handlebtn = () => {
-
-    list.innerHTML += `<div><h1>${input.value}</h1>
-    <button onclick="deleteval(this)">Delete</button>
-    </div>`;
-
-    input.value = '';
+function handlebtn() {
+    if (input.value.trim() !== "") {
+        list.innerHTML += '<div class="todo-item"><h1>' + input.value + '</h1>' +
+            '<button class="delete-btn" onclick="deleteval(this)">Delete</button>' +
+            '</div>';
+        input.value = "";
+    }
 }
 
-const deleteval = (ele) => {
+function deleteval(ele) {
     ele.parentElement.remove();
 }
