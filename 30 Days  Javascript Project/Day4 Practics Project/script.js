@@ -1,20 +1,20 @@
-// let timer = document.querySelector(".timer");
+let timer = document.querySelector('.timer')
 
-// function gettime() {
+const showtime = () => {
 
-//     let now = new Date()
+    const now = new Date();
 
-//     hours = now.getHours();
-//     minutes = now.getMinutes();
-//     seconds = now.getSeconds();
+    hours = now.getHours();
+    minutes = now.getMinutes();
+    seconds = now.getSeconds();
 
-//     hours = hours < 10 ? "0" + hours : hours;
-//     minutes = minutes < 10 ? "0" + minutes : minutes;
-//     seconds = seconds < 10 ? "0" + seconds : seconds;
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
 
-//     let fulltime = hours + ":" + minutes + ":" + seconds;
+    let fulltime = hours + ":" + minutes + ":" + seconds;
 
-//     timer.textContent = fulltime;
+    timer.textContent = fulltime;
+}
 
-// }
-// setInterval(gettime, 1000)
+setInterval(showtime, 1000)
