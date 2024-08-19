@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    background-color: #FFB300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.container h1 {
+
+    font-size: 2.8rem;
+
+}
+
+.card {
+    background-color: #1D1D1D;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    width: 300px;
+}
+
+.emoji {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.joke-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.joke-button {
+    background-color: #FFB300;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.joke-button:hover {
+    background-color: #FFA000;
+}
+
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .emoji {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    .joke-text {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .joke-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
+}
