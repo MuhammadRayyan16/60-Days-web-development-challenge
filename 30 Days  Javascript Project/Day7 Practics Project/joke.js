@@ -1,7 +1,7 @@
 const btn = document.querySelector(".joke-button");
 const container = document.querySelector(".joke-text");
-
 const jokeapi = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,political,racist,explicit";
+
 
 const getjoke = () => {
     container.classList.remove("fade");
@@ -15,6 +15,7 @@ const getjoke = () => {
             }
             container.classList.add("fade");
         })
+
         .catch(error => {
             container.textContent = "Oops! Something went wrong. Please try again.";
         });
