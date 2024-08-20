@@ -20,5 +20,6 @@ const getjoke = () => {
         });
 };
 
+
 btn.addEventListener("click", getjoke);
 getjoke();
