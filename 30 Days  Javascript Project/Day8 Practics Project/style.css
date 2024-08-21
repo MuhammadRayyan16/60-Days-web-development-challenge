@@ -9,5 +9,11 @@ html {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: #508b87;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
