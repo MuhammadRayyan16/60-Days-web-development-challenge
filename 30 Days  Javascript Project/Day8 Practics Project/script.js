@@ -1,5 +1,6 @@
 let index = 0;
 
+
 const changecolor = () => {
     let colors = ["red", "blue", "green", "yellow", "orange", "purple", "pink", "teal"];
 
